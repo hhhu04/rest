@@ -1,20 +1,21 @@
 package com.rest.open.controller
 
+import com.rest.open.service.NeopleService
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
 @RequestMapping("/api")
-class MainController {
-
-    private final val KEY = "a6lMmhOKDVCu32OBaCI8eyZ989gDBrc2"
+class MainController(
+    private var neopleService: NeopleService,
+) {
 
 
     @GetMapping("/open")
-    fun test(): String {
+    suspend fun test(): Map<String, Any>? {
 
-        return KEY
+        return neopleService.playerSearch()
     }
 
 

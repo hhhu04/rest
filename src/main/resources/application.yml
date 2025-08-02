@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: open
+
+
+
+common:
+  neople:
+    key-dnf : a6lMmhOKDVCu32OBaCI8eyZ989gDBrc2
+    key-cyphers: 8uIVySMJDNojZSTz0CqWXekwsu0aQEgo
