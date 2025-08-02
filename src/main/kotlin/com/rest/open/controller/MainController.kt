@@ -8,15 +8,11 @@ import org.springframework.web.bind.annotation.RestController
 @RestController
 @RequestMapping("/api")
 class MainController(
-    private var neopleService: NeopleService,
+
 ) {
 
 
-    @GetMapping("/open")
-    suspend fun test(): Map<String, Any>? {
 
-        return neopleService.playerSearch()
-    }
 
 
 
